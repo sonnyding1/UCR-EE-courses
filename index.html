@@ -277,36 +277,40 @@
             
 
 
-            MATH009A --> MATH009B & ME018A
-            MATH009B --> MATH009C & MATH010A & PHYS040A & ME018B
-            MATH009C --> PHYS040B
+            MATH009A --> MATH009B & ME018A & EE020B
+            MATH009B -.-> PHYS040A
+            MATH009B --> MATH009C & MATH010A & EE020A & ME018B
+            MATH009C -.-> PHYS040B
             MATH010A --> MATH010B & EE142 & ENGR160
 
-            PHYS040A --> PHYS040B --> PHYS040C --> EE030A & EE138 & EE139
+            PHYS040A --> PHYS040B --> PHYS040C --> EE138 & EE139
 
             ME002 --> ME018B
             ME018A --> ME018B
             ME018B --> ENGR160 & ME120
             ME120 --> ME145
             
-            CS010A --> CS010B & CS061 & ENGR160 & EE144
-            CS010B --> EECS120B & ME120
+            CS010A --> ENGR160 & EE020B & EE144 & CS010B & CS061
+            CS010B --> ME120 & EECS120B
             CS061 --> EECS120A
             EECS120A --> EECS120B & EECS168 & CS161
-            EECS120B --> EE128 & EE142 & EE147 & EE175A
+            EECS120B -.-> EE128
+            EECS120B --> EE142 & EE147 & EE175A
             EE175A --> EE175B
 
-            EE020A --> EE030A & EE110A & EE142
-            EE020B --> EE030A & EE110A & EE142 & EE144
+            EE020A & EE020B & PHYS040C -.-> EE030A
+            EE020A --> EE142 & EE110A
+            EE020B --> EE110A & EE142 & EE144
             EE030A --> EE030B & EE105 & ME120
-            EE030B --> EE100A & EE116 & EE128 & EE155 
-            EE100A --> EE100B & EE115 & EE123 & EE133 & EE165
+            EE030B --> EE155 & EE100A & EE116
+            EE030B -.-> EE128
+            EE100A --> EE133 & EE100B & EE123 & EE165 & EE115
             EE100B --> EE135
-            EE110A --> EE110B & EE114 & EE118 & EE132
+            EE110A --> EE114 & EE118 & EE132 & EE110B
             EE110B --> EE141 & EE152
             EE114 --> EE142 & EE150
             EE115 --> EE150
-            EE116 --> EE117 & EE118 & EE153
+            EE116 --> EE117 & EE153 & EE118
             EE132 --> EE151
             EE133 --> EE136 & EE137 & EE162
             EE141 --> EE151
